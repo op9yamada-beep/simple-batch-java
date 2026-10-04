@@ -26,12 +26,15 @@ DB書き込み用のShippingWriter.java
 
 # ソースコードが見当たらない場合
 src/main/java/com/example/
-├── app/App.java                   
+├── app/App.java  
+├── db/DatabaseConnectionManager.java                 
 ├── dto/ShippingDto.java
-├── reader/ShippingReader.java
 ├── processor/DataProcessor.java
-├── writer/ShippingWriter.java
-└── util/Logger.java 
+├── reader/ShippingReader.java
+├── util/Logger.java
+└── writer/ShippingWriter.java
+src/main/
+└── resources/sql.properties
 
 マジックリテラルになるSQL部分はpropertiesファイルで指定し読み込みをしています。
 (src/main/resources/sql.properties)
