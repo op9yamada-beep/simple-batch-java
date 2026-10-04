@@ -16,12 +16,22 @@
 // ** このコメントは学習用の細く書いたコメントです。
 
 読み方としてはmainのApp.javaから追っていきます。
+URL:https://github.com/op9yamada-beep/simple-batch-java/blob/main/demo/src/main/java/com/example/app/App.java
 DB接続のDataProcessor.javaでファクトリーで接続を確立します。
 その後に
 DB読み込み用のShippingReader.java
 加工用のDataProcessor.java
 DB書き込み用のShippingWriter.java
 に遷移し処理を終了します。
+
+# ソースコードが見当たらない場合
+src/main/java/com/example/
+├── app/App.java                   
+├── dto/ShippingDto.java
+├── reader/ShippingReader.java
+├── processor/DataProcessor.java
+├── writer/ShippingWriter.java
+└── util/ Logger.java 
 
 マジックリテラルになるSQL部分はpropertiesファイルで指定し読み込みをしています。
 (src/main/resources/sql.properties)
