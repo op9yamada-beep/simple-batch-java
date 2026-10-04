@@ -15,7 +15,7 @@ import com.example.writer.ShippingWriter;
 import java.io.IOException;
 import java.io.InputStream;
 
-/** // ** 現場ではjavadocの書き方は指定があるので任せてください。html形式の長いものをサンプルとして記載しました。
+/** // ** 現場ではjavadocの書き方は指定があるのであわせてください。html形式の長いものをサンプルとして記載しました。
  * 顧客データ集計バッチ処理のエントリーポイント（メイン処理）クラスです。
  * <p>
  * アプリケーション全体のライフサイクルおよびトランザクションの境界を管理し、
