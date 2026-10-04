@@ -24,7 +24,7 @@ DB読み込み用のShippingReader.java
 DB書き込み用のShippingWriter.java  
 に遷移し処理を終了します。  
 
-# ソースコードが見当たらない場合
+### ソースコードが見当たらない場合
 src/main/java/com/example/  
 ├── app/App.java    
 ├── db/DatabaseConnectionManager.java                   
@@ -49,7 +49,7 @@ sql.propertiesの中身は実際現場で使われるようなJOINやGROUP BYを
 などJavaの基礎となる部分は当たり前のように知って実装できる必要がある。  
 
 ## 5.実際動かす時に
-# DataProcessor.javaの下の部分は自分の環境に合わせて変える必要があります。your_** の部分です。URLのtimezoneあたりも合わせないとエラーになるかも。
+### DataProcessor.javaの下の部分は自分の環境に合わせて変える必要があります。your_** の部分です。URLのtimezoneあたりも合わせないとエラーになるかも。
     private static final String URL = "jdbc:mysql://localhost:3306/your_contener?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Tokyo";  
     private static final String USER = "your_user"; // ** 実際の現場では config.properties などから読み込むのが一般的ですが、  
     private static final String PASSWORD = "your_password"; // ** サンプルとして分かりやすく定数化または直書きしています。  
