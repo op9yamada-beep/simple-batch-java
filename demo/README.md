@@ -31,7 +31,7 @@ src/main/java/com/example/
 ├── reader/ShippingReader.java
 ├── processor/DataProcessor.java
 ├── writer/ShippingWriter.java
-└── util/ Logger.java 
+└── util/Logger.java 
 
 マジックリテラルになるSQL部分はpropertiesファイルで指定し読み込みをしています。
 (src/main/resources/sql.properties)
