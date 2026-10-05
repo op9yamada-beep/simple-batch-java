@@ -89,7 +89,7 @@ public class DataProcessor {
             processedCount++;
         }
 
-        // 4. 分析結果のサマリーをログ出力
+        // 分析結果のサマリーをログ出力
         Logger.log("--- 【配送データ分析サマリー】 ---");
         Logger.log("  - 有効処理件数: " + processedCount + " 件");
         Logger.log("  - 小型荷物(A)件数: " + smallCount + " 件");

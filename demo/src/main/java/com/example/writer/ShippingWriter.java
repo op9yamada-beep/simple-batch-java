@@ -44,7 +44,7 @@ public class ShippingWriter {
         this.sqlProp = sqlProp;
     }
 
-/**
+    /**
      * 加工済みの配送データリストをデータベースに書き込みます。
      * <p>
      * プロパティファイルから取得した INSERT 用のSQLを元に {@link PreparedStatement} を生成し、
@@ -60,7 +60,6 @@ public class ShippingWriter {
             return;
         }
 
-        // 例：INSERTまたはUPDATE用のSQL文（必要に応じてプロパティファイルから取得してもOKです）
         Logger.log("1つ目の配送データ書き込みを開始します...");
         String sqlSelect = sqlProp.getProperty("batch.shipping.insert.result");
 
@@ -75,7 +74,7 @@ public class ShippingWriter {
             for (ShippingDto dto : processedList) {
                 // DTOから値を取り出してプレースホルダーにバインド
                 pstmt.setString(1, dto.getShippingId());
-                pstmt.setString(2, dto.getCol01()); // 加工済みの値など
+                pstmt.setString(2, dto.getCol01()); // 加工済みの値
 
                 // バッチに追加　// **（複数のSQLをまとめて効率よく実行するテクニック）
                 pstmt.addBatch();

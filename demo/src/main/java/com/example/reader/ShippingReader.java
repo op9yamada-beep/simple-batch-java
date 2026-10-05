@@ -52,7 +52,7 @@ public class ShippingReader {
         List<ShippingDto> dataList = new ArrayList<>();
 
         // =============================================================
-        // 1つ目のSQL（sql.shipping.select）の実行
+        // 1つ目のSQL（batch.shipping.select.simple）の実行
         // =============================================================
         String sqlSelect = sqlProp.getProperty("batch.shipping.select.simple"); // ** sql.propertiesから指定したキーの文字列(このファイルの場合はSQL)を取得します。
         Logger.log("1つ目の配送データ読み込みを開始します...");
@@ -96,7 +96,7 @@ public class ShippingReader {
         }
 
         // =============================================================
-        // 2つ目のSQL（shipping.select.query）の実行（大量列・JOIN・GROUP BY）
+        // 2つ目のSQL（batch.shipping.select.detail）の実行（大量列・JOIN・GROUP BY）
         // =============================================================
         String sqlQuery = sqlProp.getProperty("batch.shipping.select.detail"); // ** 上のSQLとは別のSQLをプロパティファイルから読み込みます。
         Logger.log("2つ目の配送データ読み込み（集計クエリ）を開始します...");
