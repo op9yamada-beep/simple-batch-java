@@ -25,7 +25,7 @@ import java.sql.SQLException;
 public class DatabaseConnectionManager {
 
     // DB接続用ステータス
-    private static final String URL = "jdbc:mysql://localhost:3306/your_container?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Tokyo";
+    private static final String URL = "jdbc:mysql://localhost:3306/micro_ec?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Tokyo";
     private static final String USER = "root"; // ** 実際の現場では config.properties などから読み込むのが一般的ですが、
     private static final String PASSWORD = ""; // ** サンプルとして分かりやすく定数化または直書きしています。
 
